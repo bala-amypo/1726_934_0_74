@@ -44,11 +44,11 @@ public float getCgpa() {
 public void setCgpa(float cgpa) {
     this.cgpa = cgpa;
 }
-public Studentity(int id, String name, String dept) {         this.id = id;
+public Student(int id, String name, String dept) {         this.id = id;
          this.name = name;
        this.dept = dept;
     }
-     public Studentity(int id, String name, String dept) {
+     public Student(int id, String name, String dept) {
         this.id = id;
         this.name = name;
         this.email= email;
