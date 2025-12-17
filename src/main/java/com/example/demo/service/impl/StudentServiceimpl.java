@@ -14,7 +14,10 @@ public StudentService implements StudentService(){
     public Student insertStudent(Student st){  
       save(st)
     }
-    public  List<Student>getallStudent(){
-        
+    @Override
+    public  List<Student>getallSudent(){
+        return StudentRepo.findAll()
     }
+    @Override
+    public  Optional
 }
