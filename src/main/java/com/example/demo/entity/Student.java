@@ -12,30 +12,17 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-
+    private Long id;
     private String name;
-    private LocalDate dob;
     private String email;
+    private LocalDate dob;
     private float cgpa;
 
-    
-    public Student() {
-    }
-
-    public Student(Long id, String name, String email, LocalDate dob, float cgpa) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.dob = dob;
-        this.cgpa = cgpa;
-    }
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -47,14 +34,6 @@ public class Student {
         this.name = name;
     }
 
-    public LocalDate getDob() {
-        return dob;
-    }
-
-    public void setDob(LocalDate dob) {
-        this.dob = dob;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -63,11 +42,30 @@ public class Student {
         this.email = email;
     }
 
+    public LocalDate getDob() {
+        return dob;
+    }
+
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
+    }
+
     public float getCgpa() {
         return cgpa;
     }
 
     public void setCgpa(float cgpa) {
+        this.cgpa = cgpa;
+    }
+
+    public Student() {
+    }
+
+    public Student(Long id, String name, String email, LocalDate dob, float cgpa) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.dob = dob;
         this.cgpa = cgpa;
     }
 }
