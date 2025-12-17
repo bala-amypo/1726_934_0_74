@@ -19,7 +19,7 @@ public class Student {
     private String email;
     private float cgpa;
 
-    // REQUIRED by JPA
+    
     public Student() {
     }
 
